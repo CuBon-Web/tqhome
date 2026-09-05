@@ -82,7 +82,7 @@
            <nav class="nav-menu d-flex desktop-only">
              <a class="active" href="#trang-chu">TRANG CHỦ</a>
              <a href="#san-pham">SẢN PHẨM</a>
-             <a href="#ve-tqhome">VỀ TQHOME</a>
+             <a href="#ve-tqhome">VỀ HIỀN HƯƠNG</a>
              <a href="#uu-diem">ƯU ĐIỂM</a>
              <a href="#cam-ket">CAM KẾT</a>
              <a href="#lien-he">LIÊN HỆ</a>
@@ -101,14 +101,14 @@
        
        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav">
          <div class="offcanvas-header">
-           <strong style="color:var(--primary)">TQHOME</strong>
+           <strong style="color:var(--primary)">Hiền Hương</strong>
            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
          </div>
          <div class="offcanvas-body">
            <div class="list-group list-group-flush">
              <a class="list-group-item py-3" href="#trang-chu" data-bs-dismiss="offcanvas">Trang chủ</a>
              <a class="list-group-item py-3" href="#san-pham" data-bs-dismiss="offcanvas">Sản phẩm</a>
-             <a class="list-group-item py-3" href="#ve-tqhome" data-bs-dismiss="offcanvas">Về TQHome</a>
+             <a class="list-group-item py-3" href="#ve-tqhome" data-bs-dismiss="offcanvas">Về Hiền Hương</a>
              <a class="list-group-item py-3" href="#uu-diem" data-bs-dismiss="offcanvas">Ưu điểm</a>
              <a class="list-group-item py-3" href="#cam-ket" data-bs-dismiss="offcanvas">Cam kết</a>
              <a class="list-group-item py-3" href="#lien-he" data-bs-dismiss="offcanvas">Liên hệ</a>
@@ -122,7 +122,7 @@
          <div class="container">
            <div class="row g-4">
              <div class="col-lg-4">
-               <img class="footer-logo" src="{{$setting->logo_footer}}" alt="TQHome">
+               <img class="footer-logo" src="{{$setting->logo_footer}}" alt="Hiền Hương">
                <p>{!!$setting->webname!!}</p>
                <div class="social">
                  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -132,10 +132,10 @@
                </div>
              </div>
              <div class="col-6 col-lg-2"><h4>DANH MỤC</h4><ul><li><a href="#san-pham">Thiết bị điện</a></li><li><a href="#san-pham">Thiết bị vệ sinh</a></li><li><a href="#san-pham">Sen vòi</a></li><li><a href="#san-pham">Bồn nước</a></li><li><a href="#san-pham">Máy lọc nước</a></li><li><a href="#san-pham">Kim khí</a></li></ul></div>
-             <div class="col-6 col-lg-2"><h4>TQHOME</h4><ul><li><a href="#ve-tqhome">Giới thiệu</a></li><li><a href="#ve-tqhome">Lịch sử 20 năm</a></li><li><a href="#uu-diem">Ưu điểm</a></li><li><a href="#cam-ket">Cam kết</a></li><li><a href="#bai-viet">Bài viết</a></li></ul></div>
+             <div class="col-6 col-lg-2"><h4>Hiền Hương</h4><ul><li><a href="#ve-tqhome">Giới thiệu</a></li><li><a href="#ve-tqhome">Lịch sử 20 năm</a></li><li><a href="#uu-diem">Ưu điểm</a></li><li><a href="#cam-ket">Cam kết</a></li><li><a href="#bai-viet">Bài viết</a></li></ul></div>
              <div class="col-6 col-lg-2"><h4>LIÊN HỆ</h4><ul><li>{{$setting->address1}}</li><li>{{$setting->phone1}}</li></ul></div>
            </div>
-           <div class="footer-bottom">© 2026 TQHome. All rights reserved.</div>
+           <div class="footer-bottom">© 2026 Hiền Hương. All rights reserved.</div>
          </div>
        </footer>
        
@@ -155,15 +155,15 @@
          }
          $floatMapQuery = trim((string) ($setting->address1 ?? ''));
          if ($floatMapQuery === '') {
-           $floatMapQuery = 'TQHome Thanh Hoa';
+           $floatMapQuery = 'Hiền Hương Thanh Hoa';
          } else {
-           $floatMapQuery = 'TQHome, ' . $floatMapQuery;
+           $floatMapQuery = 'Hiền Hương, ' . $floatMapQuery;
          }
          $floatMapUrl = 'https://maps.app.goo.gl/r3rCS77EQoCGYmae9';
        @endphp
-       <div class="floating-actions" aria-label="Liên hệ nhanh TQHome">
+       <div class="floating-actions" aria-label="Liên hệ nhanh Hiền Hương">
          <div class="floating-action-item">
-           <a href="#" class="floating-btn floating-quote btn-consult" data-product="Báo giá" aria-label="Yêu cầu báo giá TQHome">
+           <a href="#" class="floating-btn floating-quote btn-consult" data-product="Báo giá" aria-label="Yêu cầu báo giá Hiền Hương">
              <span class="floating-btn-ring" aria-hidden="true"></span>
              <span class="floating-btn-ring floating-btn-ring--delay" aria-hidden="true"></span>
              <span class="floating-btn-shine" aria-hidden="true"></span>
@@ -173,7 +173,7 @@
            <span class="floating-btn-caption">Báo giá</span>
          </div>
          <div class="floating-action-item">
-           <a href="{{ $floatMapUrl }}" class="floating-btn floating-map" target="_blank" rel="noopener noreferrer" aria-label="Chỉ đường tới TQHome trên Google Maps">
+           <a href="{{ $floatMapUrl }}" class="floating-btn floating-map" target="_blank" rel="noopener noreferrer" aria-label="Chỉ đường tới Hiền Hương trên Google Maps">
              <span class="floating-btn-ring" aria-hidden="true"></span>
              <span class="floating-btn-ring floating-btn-ring--delay" aria-hidden="true"></span>
              <span class="floating-btn-shine" aria-hidden="true"></span>
@@ -193,7 +193,7 @@
            <span class="floating-btn-caption">Hotline</span>
          </div>
          <div class="floating-action-item">
-           <a href="{{ $floatZaloUrl }}" class="floating-btn floating-zalo" target="_blank" rel="noopener noreferrer" aria-label="Chat Zalo TQHome">
+           <a href="{{ $floatZaloUrl }}" class="floating-btn floating-zalo" target="_blank" rel="noopener noreferrer" aria-label="Chat Zalo Hiền Hương">
              <span class="floating-btn-ring" aria-hidden="true"></span>
              <span class="floating-btn-ring floating-btn-ring--delay" aria-hidden="true"></span>
              <span class="floating-btn-shine" aria-hidden="true"></span>
@@ -211,9 +211,9 @@
              <div class="consult-modal-header">
                <button type="button" class="consult-modal-close" data-bs-dismiss="modal" aria-label="Đóng"><i class="fa-solid fa-xmark"></i></button>
                <div class="consult-modal-icon"><i class="fa-solid fa-headset"></i></div>
-               <div class="eyebrow" style="color:#cbd9f4">TQHOME • TƯ VẤN MIỄN PHÍ</div>
+               <div class="eyebrow" style="color:#cbd9f4">Hiền Hương • TƯ VẤN MIỄN PHÍ</div>
                <h2 id="consultModalLabel">Đăng ký nhận tư vấn</h2>
-               <p>Điền thông tin bên dưới, TQHome sẽ liên hệ tư vấn sản phẩm phù hợp với nhu cầu của bạn.</p>
+               <p>Điền thông tin bên dưới, Hiền Hương sẽ liên hệ tư vấn sản phẩm phù hợp với nhu cầu của bạn.</p>
              </div>
        
              <div class="consult-modal-body">
@@ -256,7 +256,7 @@
                <div id="consultSuccess" class="consult-success" hidden>
                  <div class="consult-success-icon"><i class="fa-solid fa-circle-check"></i></div>
                  <h3>Đã gửi yêu cầu thành công!</h3>
-                 <p>Cảm ơn bạn đã liên hệ TQHome. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+                 <p>Cảm ơn bạn đã liên hệ Hiền Hương. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
                  <div class="consult-success-actions">
                    <a href="tel:{{$setting->phone1}}" class="consult-call-btn"><i class="fa-solid fa-phone"></i> Gọi ngay {{$setting->phone1}}</a>
                    <button type="button" class="consult-close-btn" data-bs-dismiss="modal">Đóng</button>
@@ -363,8 +363,8 @@
                const isQuote = product === "Báo giá";
                consultTitle.textContent = isQuote ? "Yêu cầu báo giá" : "Đăng ký nhận tư vấn";
                consultDesc.textContent = isQuote
-                 ? "Điền thông tin bên dưới, TQHome sẽ liên hệ báo giá sản phẩm phù hợp với nhu cầu của bạn."
-                 : "Điền thông tin bên dưới, TQHome sẽ liên hệ tư vấn sản phẩm phù hợp với nhu cầu của bạn.";
+                 ? "Điền thông tin bên dưới, Hiền Hương sẽ liên hệ báo giá sản phẩm phù hợp với nhu cầu của bạn."
+                 : "Điền thông tin bên dưới, Hiền Hương sẽ liên hệ tư vấn sản phẩm phù hợp với nhu cầu của bạn.";
              }
              consultModal.show();
              setTimeout(() => document.getElementById("consultName")?.focus(), 350);

@@ -14,11 +14,9 @@
 @endsection
 @section('css')
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 @endsection
 @section('js')
 <script src="/frontend/js/wow.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
    (function () {
       if (typeof WOW !== 'function') {
@@ -81,38 +79,6 @@
          }
       });
    })();
-
-   (function () {
-      var el = document.querySelector('.partner-swiper');
-      if (!el || typeof Swiper !== 'function') return;
-      var count = el.querySelectorAll('.swiper-slide').length;
-      new Swiper(el, {
-         slidesPerView: 2,
-         spaceBetween: 12,
-         speed: 700,
-         loop: count >= 6,
-         rewind: count > 1 && count < 6,
-         grabCursor: true,
-         autoplay: count > 1 ? {
-            delay: 2400,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-         } : false,
-         navigation: {
-            nextEl: el.querySelector('.swiper-button-next'),
-            prevEl: el.querySelector('.swiper-button-prev')
-         },
-         pagination: {
-            el: el.querySelector('.swiper-pagination'),
-            clickable: true
-         },
-         breakpoints: {
-            576: { slidesPerView: 2.4, spaceBetween: 14 },
-            768: { slidesPerView: 3, spaceBetween: 16 },
-            992: { slidesPerView: 3.4, spaceBetween: 18 }
-         }
-      });
-   })();
 </script>
 @endsection
 @section('content')
@@ -167,7 +133,7 @@
   <div class="container">
     <div class="section-heading center wow animate__fadeInUp">
       <h2>Lĩnh vực kinh doanh</h2>
-      <p>Từ những món kim khí nhỏ nhất đến thiết bị điện nước, vệ sinh và xử lý nước — TQHome hướng đến trải nghiệm mua sắm thuận tiện, đồng bộ.</p>
+      <p>Từ những món kim khí nhỏ nhất đến thiết bị điện nước, vệ sinh và xử lý nước — Hiền Hương hướng đến trải nghiệm mua sắm thuận tiện, đồng bộ.</p>
     </div>
 
     <div class="row g-3 g-lg-4">
@@ -188,7 +154,7 @@
   <div class="container">
     <div class="section-heading center wow animate__fadeInUp">
       <div class="eyebrow">LÝ DO KHÁCH HÀNG LỰA CHỌN</div>
-      <h2>TQHome không chỉ bán sản phẩm</h2>
+      <h2>Hiền Hương không chỉ bán sản phẩm</h2>
       <p>Chúng tôi tập trung vào chất lượng sản phẩm, sự minh bạch và khả năng tư vấn để khách hàng chọn đúng ngay từ đầu.</p>
     </div>
 
@@ -220,7 +186,7 @@
       <div class="why-item wow animate__fadeInUp" data-wow-delay=".08s"><div class="why-number">02</div><div class="why-icon"><i class="fa-solid fa-certificate"></i></div><h3>CHẤT LƯỢNG</h3><p>Ưu tiên sản phẩm có nguồn gốc rõ ràng, thương hiệu và chất lượng phù hợp.</p></div>
       <div class="why-item wow animate__fadeInUp" data-wow-delay=".16s"><div class="why-number">03</div><div class="why-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>GIÁ HỢP LÝ</h3><p>Tối ưu chi phí cho gia đình, thợ, nhà thầu và khách hàng mua số lượng.</p></div>
       <div class="why-item wow animate__fadeInUp" data-wow-delay=".24s"><div class="why-number">04</div><div class="why-icon"><i class="fa-solid fa-comments"></i></div><h3>TƯ VẤN ĐÚNG NHU CẦU</h3><p>Đội ngũ hỗ trợ lựa chọn theo công trình, ngân sách và mục đích sử dụng.</p></div>
-      <div class="why-item wow animate__fadeInUp" data-wow-delay=".32s"><div class="why-number">05</div><div class="why-icon"><i class="fa-solid fa-handshake-angle"></i></div><h3>ĐỒNG HÀNH LÂU DÀI</h3><p>Không dừng ở bán hàng, TQHome chú trọng hỗ trợ sau bán và bảo hành.</p></div>
+      <div class="why-item wow animate__fadeInUp" data-wow-delay=".32s"><div class="why-number">05</div><div class="why-icon"><i class="fa-solid fa-handshake-angle"></i></div><h3>ĐỒNG HÀNH LÂU DÀI</h3><p>Không dừng ở bán hàng, Hiền Hương chú trọng hỗ trợ sau bán và bảo hành.</p></div>
       @endforelse
     </div>
   </div>
@@ -256,7 +222,7 @@
             <img
               id="aboutGalleryMain"
               src="{{ url($aboutMain) }}"
-              alt="Cửa hàng TQHome tại Thanh Hóa"
+              alt="Cửa hàng Hiền Hương tại Thanh Hóa"
             >
           </div>
           @if (count($aboutImages) > 1)
@@ -277,7 +243,7 @@
       </div>
 
       <div class="about-copy wow animate__fadeInRight">
-        <div class="eyebrow">VỀ TQHOME</div>
+        <div class="eyebrow">VỀ Hiền Hương</div>
         <h2>Buôn cái gì cũng có — phục vụ từ gia đình đến công trình</h2>
         <div class="about-copy-body" id="aboutCopyBody">
           <div class="about-copy-text" id="aboutCopyText">
@@ -306,7 +272,7 @@
     <div class="stats-bar wow animate__fadeInUp">
       <div class="row g-0">
         <div class="col-4"><div class="stat"><strong>20+</strong><span>NĂM KINH NGHIỆM</span></div></div>
-        <div class="col-4"><div class="stat"><strong>1000+</strong><span>SẢN PHẨM & VẬT TƯ</span></div></div>
+        <div class="col-4"><div class="stat"><strong>7000+</strong><span>SẢN PHẨM & VẬT TƯ</span></div></div>
         <div class="col-4"><div class="stat"><strong>5000+</strong><span>KHÁCH HÀNG</span></div></div>
       </div>
     </div>
@@ -314,27 +280,20 @@
     <div class="partner-slider wow animate__fadeInUp">
       <div class="partner-slider__head">
         <div class="eyebrow">ĐỐI TÁC</div>
-        <p>Thương hiệu đồng hành cùng TQHome</p>
+        <p>Thương hiệu đồng hành cùng Hiền Hương</p>
       </div>
-      <div class="swiper partner-swiper">
-        <div class="swiper-wrapper">
-          @foreach ($Partner as $item)
-          <div class="swiper-slide">
-            @if (!empty($item->link))
-            <a class="partner-item" href="{{ $item->link }}" target="_blank" rel="noopener noreferrer" title="{{ $item->name }}">
-              <img src="{{ url($item->image) }}" alt="{{ $item->name }}">
-            </a>
-            @else
-            <div class="partner-item" title="{{ $item->name }}">
-              <img src="{{ url($item->image) }}" alt="{{ $item->name }}">
-            </div>
-            @endif
+      <div class="partner-grid">
+        @foreach ($Partner as $item)
+          @if (!empty($item->link))
+          <a class="partner-item" href="{{ $item->link }}" target="_blank" rel="noopener noreferrer" title="{{ $item->name }}">
+            <img src="{{ url($item->image) }}" alt="{{ $item->name }}">
+          </a>
+          @else
+          <div class="partner-item" title="{{ $item->name }}">
+            <img src="{{ url($item->image) }}" alt="{{ $item->name }}">
           </div>
-          @endforeach
-        </div>
-        <button type="button" class="swiper-button-prev" aria-label="Đối tác trước"></button>
-        <button type="button" class="swiper-button-next" aria-label="Đối tác tiếp"></button>
-        <div class="swiper-pagination"></div>
+          @endif
+        @endforeach
       </div>
     </div>
     @endif
@@ -345,9 +304,9 @@
 <section id="cam-ket" class="section commit-section">
   <div class="container">
     <div class="section-heading commit-heading center wow animate__fadeInUp">
-      <div class="eyebrow" style="color:#cbd9f4">CAM KẾT CỦA TQHOME</div>
+      <div class="eyebrow" style="color:#cbd9f4">CAM KẾT CỦA Hiền Hương</div>
       <h2>Mua hàng yên tâm, sử dụng lâu dài</h2>
-      <p>Những giá trị TQHome muốn khách hàng cảm nhận trong mỗi lần mua hàng.</p>
+      <p>Những giá trị Hiền Hương muốn khách hàng cảm nhận trong mỗi lần mua hàng.</p>
     </div>
 
     <div class="commit-grid" @if (isset($coreValues) && $coreValues->isNotEmpty()) style="--commit-cols: {{ min($coreValues->count(), 5) }}" @endif>
@@ -383,7 +342,7 @@
         <div>
           <div class="history-kicker">LỊCH SỬ HÌNH THÀNH & PHÁT TRIỂN</div>
           <h2>20 năm — một hành trình xây dựng niềm tin</h2>
-          <p class="history-intro">Từ một cửa hàng kinh doanh kim khí và điện nước, TQHome từng bước mở rộng ngành hàng, phục vụ đa dạng hơn và hướng tới trở thành địa chỉ quen thuộc của khách hàng tại Thanh Hóa.</p>
+          <p class="history-intro">Từ một cửa hàng kinh doanh kim khí và điện nước, Hiền Hương từng bước mở rộng ngành hàng, phục vụ đa dạng hơn và hướng tới trở thành địa chỉ quen thuộc của khách hàng tại Thanh Hóa.</p>
         </div>
         <div class="history-big">20+<small>NĂM</small></div>
       </div>
@@ -399,7 +358,7 @@
         <div class="milestone"><strong>2004</strong><h4>KHỞI ĐẦU</h4><p>Bắt đầu kinh doanh kim khí và điện nước, phục vụ nhu cầu thiết yếu của khách hàng địa phương.</p></div>
         <div class="milestone"><strong>2010</strong><h4>MỞ RỘNG NGÀNH HÀNG</h4><p>Đa dạng thêm vật tư điện nước, thiết bị vệ sinh, sen vòi và các sản phẩm phục vụ công trình.</p></div>
         <div class="milestone"><strong>2016</strong><h4>PHÁT TRIỂN QUY MÔ</h4><p>Tăng cường phục vụ thợ, nhà thầu, công trình và xây dựng mạng lưới khách hàng lâu dài.</p></div>
-        <div class="milestone"><strong>2024 →</strong><h4>TQHOME HÔM NAY</h4><p>Tiếp tục mở rộng danh mục với định hướng “buôn cái gì cũng có”, lấy uy tín và dịch vụ làm nền tảng.</p></div>
+        <div class="milestone"><strong>2024 →</strong><h4>Hiền Hương HÔM NAY</h4><p>Tiếp tục mở rộng danh mục với định hướng “buôn cái gì cũng có”, lấy uy tín và dịch vụ làm nền tảng.</p></div>
         @endforelse
       </div>
     </div>
@@ -411,7 +370,7 @@
 <section id="lien-he" class="section">
   <div class="container">
     <div class="section-heading center wow animate__fadeInUp">
-      <div class="eyebrow">GHÉ TQHOME TẠI THANH HÓA</div>
+      <div class="eyebrow">GHÉ HIỀN HƯƠNG TẠI THANH HÓA</div>
       <h2>Đến cửa hàng hoặc gọi để được tư vấn</h2>
     </div>
 
@@ -420,14 +379,14 @@
         <div class="col-lg-4">
           <div class="contact-info wow animate__fadeInLeft">
             <div class="eyebrow" style="color:#cbd9f4">THÔNG TIN LIÊN HỆ</div>
-            <h2>TQHOME</h2>
+            <h2>Hiền Hương</h2>
             <p>Kim khí • Điện nước • Thiết bị vệ sinh • Sen vòi • Bồn nước • Máy lọc nước</p>
             <div class="contact-line"><i class="fa-solid fa-location-dot"></i><span>{{$setting->address1}}</span></div>
             <div class="contact-line"><i class="fa-solid fa-phone"></i><span>{{$setting->phone1}}</span></div>
             <div class="contact-line"><i class="fa-solid fa-phone"></i><span>{{$setting->phone2}}</span></div>
             <div class="contact-line"><i class="fa-solid fa-envelope"></i><span>{{$setting->email}}</span></div>
-            <div class="contact-line"><i class="fa-regular fa-clock"></i><span>07:30 – 18:00 (T2 – CN)</span></div>
-            <a href="tel:{{$setting->phone1}}" class="contact-call"><small>GỌI TQHOME</small><strong>{{$setting->phone1}}</strong></a>
+            <div class="contact-line"><i class="fa-regular fa-clock"></i><span>06:40 – 18:00 (T2 – CN)</span></div>
+            <a href="tel:{{$setting->phone1}}" class="contact-call"><small>GỌI HIỀN HƯƠNG</small><strong>{{$setting->phone1}}</strong></a>
             <button type="button" class="contact-form-btn btn-consult" data-product="Liên hệ cửa hàng"><i class="fa-solid fa-paper-plane"></i> Gửi yêu cầu tư vấn</button>
           </div>
         </div>
