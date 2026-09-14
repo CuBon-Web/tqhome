@@ -109,13 +109,13 @@
       @if ($heroPhone !== '' || $heroZaloUrl !== '')
       <div class="hero-video-actions">
         @if ($heroPhone !== '')
-        <a class="hero-video-btn hero-video-btn--call" href="tel:{{ $heroPhone }}" title="Gọi hotline {{ $heroPhone }}">
+        <a class="hero-video-btn hero-video-btn--call" href="tel:{{ $heroPhone }}" onclick="fbq('track', 'Contact');" title="Gọi hotline {{ $heroPhone }}">
           <i class="fa-solid fa-phone"></i>
           <span>Gọi hotline</span>
         </a>
         @endif
         @if ($heroZaloUrl !== '')
-        <a class="hero-video-btn hero-video-btn--zalo" href="{{ $heroZaloUrl }}" target="_blank" rel="noopener noreferrer" title="Chat Zalo">
+        <a class="hero-video-btn hero-video-btn--zalo" href="{{ $heroZaloUrl }}" onclick="fbq('track', 'Contact');" target="_blank" rel="noopener noreferrer" title="Chat Zalo">
           <i class="fa-solid fa-comment-dots"></i>
           <span>Zalo</span>
         </a>
@@ -260,7 +260,7 @@
             <span><small>ĐĂNG KÝ NHẬN TƯ VẤN</small><strong>Gửi yêu cầu ngay</strong></span>
           </a>
           @if (!empty($setting->phone1))
-          <a class="about-cta about-cta--call" href="tel:{{ $setting->phone1 }}" title="Gọi hotline {{ $setting->phone1 }}">
+          <a class="about-cta about-cta--call" href="tel:{{ $setting->phone1 }}" onclick="fbq('track', 'Contact');" title="Gọi hotline {{ $setting->phone1 }}">
             <i class="fa-solid fa-phone"></i>
             <span><small>GỌI HOTLINE</small><strong>{{ $setting->phone1 }}</strong></span>
           </a>
@@ -386,7 +386,7 @@
             <div class="contact-line"><i class="fa-solid fa-phone"></i><span>{{$setting->phone2}}</span></div>
             <div class="contact-line"><i class="fa-solid fa-envelope"></i><span>{{$setting->email}}</span></div>
             <div class="contact-line"><i class="fa-regular fa-clock"></i><span>06:40 – 18:00 (T2 – CN)</span></div>
-            <a href="tel:{{$setting->phone1}}" class="contact-call"><small>GỌI HIỀN HƯƠNG</small><strong>{{$setting->phone1}}</strong></a>
+            <a href="tel:{{$setting->phone1}}" onclick="fbq('track', 'Contact');" class="contact-call"><small>GỌI HIỀN HƯƠNG</small><strong>{{$setting->phone1}}</strong></a>
             <button type="button" class="contact-form-btn btn-consult" data-product="Liên hệ cửa hàng"><i class="fa-solid fa-paper-plane"></i> Gửi yêu cầu tư vấn</button>
           </div>
         </div>

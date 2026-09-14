@@ -71,6 +71,41 @@
 
   <link rel="stylesheet" href="/frontend/css/style.css">
       @yield('css')
+      <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','2108897140029363');
+  fbq('track','PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2108897140029363&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2108897140029363');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2108897140029363&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
    </head>
    <body>
       <header class="site-header">
@@ -88,7 +123,7 @@
              <a href="#lien-he">LIÊN HỆ</a>
            </nav>
        
-           <a href="tel:{{$setting->phone1}}" class="header-contact desktop-only">
+           <a href="tel:{{$setting->phone1}}" onclick="fbq('track', 'Contact');" class="header-contact desktop-only">
              <span class="icon"><i class="fa-solid fa-phone"></i></span>
              <span><strong>{{$setting->phone1}}</strong><small>Tư vấn & hỗ trợ</small></span>
            </a>
@@ -183,7 +218,7 @@
            <span class="floating-btn-caption">Chỉ đường</span>
          </div>
          <div class="floating-action-item">
-           <a href="tel:{{ $floatPhone }}" class="floating-btn floating-phone" aria-label="Gọi hotline {{ $floatPhone }}">
+           <a href="tel:{{ $floatPhone }}" onclick="fbq('track', 'Contact');" class="floating-btn floating-phone" aria-label="Gọi hotline {{ $floatPhone }}">
              <span class="floating-btn-ring" aria-hidden="true"></span>
              <span class="floating-btn-ring floating-btn-ring--delay" aria-hidden="true"></span>
              <span class="floating-btn-shine" aria-hidden="true"></span>
@@ -193,7 +228,7 @@
            <span class="floating-btn-caption">Hotline</span>
          </div>
          <div class="floating-action-item">
-           <a href="{{ $floatZaloUrl }}" class="floating-btn floating-zalo" target="_blank" rel="noopener noreferrer" aria-label="Chat Zalo Hiền Hương">
+           <a href="{{ $floatZaloUrl }}" onclick="fbq('track', 'Contact');" class="floating-btn floating-zalo" target="_blank" rel="noopener noreferrer" aria-label="Chat Zalo Hiền Hương">
              <span class="floating-btn-ring" aria-hidden="true"></span>
              <span class="floating-btn-ring floating-btn-ring--delay" aria-hidden="true"></span>
              <span class="floating-btn-shine" aria-hidden="true"></span>
@@ -250,15 +285,15 @@
                  </div>
                  <p id="consultFormError" class="consult-form-error" hidden></p>
                  <button type="submit" class="consult-submit" id="consultSubmit"><i class="fa-solid fa-paper-plane"></i> <span>Gửi yêu cầu tư vấn</span></button>
-                 <p class="consult-note"><i class="fa-solid fa-shield-halved"></i> Thông tin được bảo mật. Hotline: <a href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a></p>
+                 <p class="consult-note"><i class="fa-solid fa-shield-halved"></i> Thông tin được bảo mật. Hotline: <a onclick="fbq('track', 'Contact');" href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a></p>
                </form>
        
                <div id="consultSuccess" class="consult-success" hidden>
                  <div class="consult-success-icon"><i class="fa-solid fa-circle-check"></i></div>
-                 <h3>Đã gửi yêu cầu thành công!</h3>
+                 <h3>Đã gửi yêu cầu thành công!</h3>  
                  <p>Cảm ơn bạn đã liên hệ Hiền Hương. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
                  <div class="consult-success-actions">
-                   <a href="tel:{{$setting->phone1}}" class="consult-call-btn"><i class="fa-solid fa-phone"></i> Gọi ngay {{$setting->phone1}}</a>
+                   <a onclick="fbq('track', 'Contact');" href="tel:{{$setting->phone1}}" class="consult-call-btn"><i class="fa-solid fa-phone"></i> Gọi ngay {{$setting->phone1}}</a>
                    <button type="button" class="consult-close-btn" data-bs-dismiss="modal">Đóng</button>
                  </div>
                </div>
